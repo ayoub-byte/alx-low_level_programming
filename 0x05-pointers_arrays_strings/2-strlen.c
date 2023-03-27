@@ -1,12 +1,16 @@
 #include "main.h"
 /**
-*  reset_to_98 - takes the pointer and updates the value
-*  @n: int to check
-*  Owned By Bwave/Bright
-*  Return: 0 is success
-*/
-
-void reset_to_98(int *n)
+ * _strlen - return the length of a string
+ * Owned By Bwave
+ * @s: char to check
+ * Description: this will return the length of a string
+ * Return: 0 is success
+ */
+int _strlen(char *s)
 {
-	*n = 98;
+	int a = 0;
+
+	for (; *s++;)
+		a++;
+	return (a);
 }
